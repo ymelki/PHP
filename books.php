@@ -11,8 +11,7 @@ include "header.php";
 // $pdo = new \PDO('mysql:host=localhost;dbname=book', 'root', '');
 // var_dump($pdo);
 
-// query 
-
+// query  
 
 $books=get("book");
 var_dump($books);

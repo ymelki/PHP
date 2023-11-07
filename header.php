@@ -10,6 +10,6 @@ include "function.php";
 </head>
 <body>
     <a href="index.php">Home</a> - 
-    <a href="book.php">Books</a> - 
-    <a href="author.php">Authors</a> - 
-    <a href="user.php">Users</a> - 
+    <a href="books.php">Books</a> - 
+    <a href="authors.php">Authors</a> - 
+    <a href="users.php">Users</a> - 
