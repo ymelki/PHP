@@ -13,7 +13,7 @@ echo $_GET['id'];
 $id=$_GET['id'];
 
 // 1 connect to D.B.
-$pdo = new \PDO('mysql:host=localhost;dbname=book', 'root', '');
+//$pdo = new \PDO('mysql:host=localhost;dbname=book', 'root', '');
 
 // Query : SELECT * FROM book where id=$id;
 /*
@@ -23,16 +23,16 @@ $book = $statement->fetch(PDO::FETCH_ASSOC);
 */
 
 // query with id 
-$query = "SELECT * FROM book where id=:myId";
+//$query = "SELECT * FROM book where id=:myId";
 // query prepare with PDO 
-$statement = $pdo->prepare($query);
+//$statement = $pdo->prepare($query);
 // definie ":myid"
-$statement->bindValue(':myId', $id, \PDO::PARAM_INT);
+//$statement->bindValue(':myId', $id, \PDO::PARAM_INT);
 // execute
-$statement->execute();
+//$statement->execute();
 // get data 
-$book = $statement->fetch(PDO::FETCH_ASSOC);
-
+//$book = $statement->fetch(PDO::FETCH_ASSOC);
+$book=getRow("book", $id);
 var_dump($book);
 
 echo "ID : " . $book['id'] . "<br>".
