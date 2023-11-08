@@ -26,8 +26,14 @@ foreach ( $books as $book   ){
    
     <hr> URL : book.php?id=".$book['id']."
     
-    <a href=book.php?id=.$book[id].>Book  : ".$book['title']
-    ."</a>"
+    <a href=book.php?id=$book[id]>Book  : ".$book['title']
+    ."</a>
+     - 
+     <a href=deletebook.php?id=$book[id]>   
+     Remove
+     </a>
+    
+    "
     
     ;
 }
