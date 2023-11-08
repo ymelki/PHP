@@ -16,7 +16,7 @@ $query = "SELECT * FROM user";
 $statement = $pdo->query($query);
 $users = $statement->fetchAll(PDO::FETCH_ASSOC);
 */
-$users=get("user");
+$users=getAllRows("user");
 
 var_dump($users);
 

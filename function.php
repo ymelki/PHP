@@ -22,7 +22,7 @@ function displayHelloL($lastname)
    echo "Hello ".$lastname;
 }
 // get data from table
-function get($table)
+function getAllRows($table)
 {
     $pdo=connect_bd();
     $query = "SELECT * FROM $table";

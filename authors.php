@@ -16,7 +16,7 @@ $query = "SELECT * FROM author";
 $statement = $pdo->query($query);
 $authors = $statement->fetchAll(PDO::FETCH_ASSOC);
 */
-$authors=get("author");
+$authors=getAllRows("author");
 
 var_dump($authors);
 

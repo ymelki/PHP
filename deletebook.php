@@ -15,4 +15,4 @@ $statement->bindValue(':myId', $id, \PDO::PARAM_INT);
 $statement->execute();
 
 // redirect to books.php
-header('location:books.php?message=success');
+// header('location:books.php?message=success');

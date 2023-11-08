@@ -1,6 +1,12 @@
 <?php
 include "header.php";
+if (!empty($_GET['message'])){
+    if ($_GET['message']==="success"){
+        echo " this book has removed !";
+    }
+}
 ?>
+
 <hr>
 
 <?php
@@ -13,7 +19,7 @@ include "header.php";
 
 // query  
 
-$books=get("book");
+$books=getAllRows("book");
 var_dump($books);
 echo count([34,23,43]);
 
