@@ -13,3 +13,5 @@ include "function.php";
     <a href="books.php">Books</a> - 
     <a href="authors.php">Authors</a> - 
     <a href="users.php">Users</a> - 
+    <a href="createbook.php">Create book</a> - 
+    <a href="createauthor.php">Create author</a> - 
